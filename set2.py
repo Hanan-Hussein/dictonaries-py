@@ -1,0 +1,28 @@
+#union
+even = set(range(0,40,2))
+print(even)
+
+print(len(even))
+squares_tuple = (4, 6, 9, 16, 25)
+squares = set(squares_tuple)
+print(squares)
+print(len(squares))
+print(even.union(squares))
+print(len(even.union(squares)))
+print(squares.union(even))
+print("=="*40)
+#intersection
+print(even.intersection(squares))
+print(even&squares)
+print(squares.intersection(even))
+print(squares & even)
+print("=="*40)
+# difference btwn the sets
+print(sorted(even))
+print(sorted(squares))
+print("even minus square")
+print(sorted(even.difference(squares)))
+print(sorted(even-squares))
+print("square minus even")
+print(sorted(squares.difference(even)))
+print(squares-even)
